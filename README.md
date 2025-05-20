@@ -106,6 +106,8 @@ npm run dev
 ## 📸 Screenshots
 
 > Add screenshots of the main UI, dark mode, and admin dashboard here!
+![CampusCanteen Screenshot](./ss1.png)
+![CampusCanteen Screenshot](./ss2.png)
 
 ---
 
