@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-orange-50 to-amber-100 min-h-screen font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-amber-100 text-amber-800 rounded-lg hover:bg-amber-200 transition-all duration-300 shadow-sm hover:shadow-md font-semibold;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-4;
+  }
+  .nav-link {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-orange-100;
+  }
+  .nav-link.active {
+    @apply bg-orange-500 text-white hover:bg-orange-600;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.5s ease;
+  }
+  @keyframes slide-in {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+  .animate-slide-in {
+    animation: slide-in 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+}
+
+
+
